@@ -1,0 +1,371 @@
+
+/* .nav{ */
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem; add some padding for better spacing */
+/* } */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*body color*/
+body{
+  background-image: linear-gradient(to bottom, rgb(228,255, 244) 100%, rgb(239, 255, 248 ) 100%, rgb(247, 255, 252 )100%);
+}
+
+/* spaces out the li(links home, menu,etc)*/
+.gridnavbar {
+    flex-grow: 1;
+    justify-items: flex-start; 
+}
+
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+
+
+}
+
+/*centers the li txt horizantoly*/
+.navlinks ul{
+   
+   display: flex;
+   justify-content: space-between; /* center horizontally */
+   align-items: center;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   height: 60px;
+   width: 800px;
+
+}
+/* moves the li  up*/
+.navlinks li {
+    margin-right: 1rem;
+   list-style: none;
+}
+/*align the h4 and li in the same horizantal line*/
+.navlinks {
+    display: flex;
+    align-items: center;
+}
+
+  /*moves the h4 and li up*/
+  .navlinks h4 {
+    margin: 0;
+    padding-right: 400px;
+    padding-left: 100px;
+    font-size: 44px;
+    font-family: 'Roboto';
+    float: left;
+   
+  }
+  .highlight {
+    color: rgba(255, 173, 76, 1);
+    
+  }
+
+  .navlinks a {
+    font-family: 'Roboto', sans-serif;
+    color: rgba(75, 75, 75, 1);
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .navlinks .home-link a {
+    color: rgba(255, 173, 76, 1);
+  }
+  /* search bar
+  .searchBox{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.searchBox a, a:hover {
+  text-decoration: none;
+
+}
+.searchtext {
+  width: 20rem;
+  height: 4rem;
+  border-radius: 5rem;
+  border: none;
+  outline: none;
+  transition: all 0.2s linear;
+  position: absolute;
+  right: 1rem;
+  display: grid;
+
+}
+.searchtext:focus {
+  outline: none;
+  width: 25rem;
+}
+.searchBtn{
+  width: 5rem;
+  height: 2rem;
+  color: rgba(75, 75, 75, 1);
+  position: absolute;
+  right: 13rem;
+  display: grid;
+  place-items: center;
+}
+.searchBox:hover > .searchtext{ 
+ 
+  padding: 2rem;
+  box-shadow: 0 2rem 2rem -1.5rem rgba(0, 0, 0, 0.5);
+  
+}
+.searchBox:hover > .searchBtn{
+  background: #fff;
+  color: rgba(255, 173, 76, 1);
+} */
+
+/* grid layout*/
+/* show the grid and the spacing in column*/
+.grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+/* Grid background colors to see grid placements*/
+}
+.grid > div{
+    background: #eee;
+    
+    padding: 1em;
+
+}
+.grid > div:nth-child(odd){
+    background: #ddd;
+}
+
+/* Box 1 design title an expanation of resturant*/
+
+.box1{
+  position:relative;
+}
+.box1{
+  position:absolute;
+  top: 25em;
+  left:3em;
+  width: 800px;
+  height:400px;
+  background-color: rgba(255, 255, 255, 0.5)!important;
+  border-radius: 1em;
+  padding: 2em;
+
+
+}
+.highlight{
+  color: rgb(255, 173, 76)100%;
+ 
+}
+.box1 h1{
+  color: rgb(106, 162, 79);
+  font-size: 72px;
+}
+.box1 h6{
+  color: rgb(75 75 75);
+  font-size: 40px;
+}
+/* Box 2 design image*/
+.box2{
+  position: relative;
+}
+.box2{
+  position:absolute;
+  top: 17em;
+  left: 45em;
+  width:1000px;
+  height: 740px;
+  border-radius: 1em;
+  padding: 2em;
+
+}
+.box2 img{
+  position:absolute;
+  top: 1em;
+  left:2em;
+  width: 1000px;
+  height: 700px;
+  border-radius: 2em;
+  padding: 1em;
+}
+.grid >.box2 {
+  color: rgb(147, 225, 215); 
+}
+.box2{
+  background-color: rgb(147, 225, 215)!important; 
+  box-shadow: 10px 10px 12px 0 rgb(58, 225, 204)100%;
+  
+}
+/* Box 3 supportf by */
+.box3{
+  position: absolute;
+  bottom: -15em;
+  left: 50em;
+}
+.grid >.box3 {
+  background-color:rgb(228,255, 244) !important; 
+}
+.box3 h2{
+  color: rgb(75 75 75);
+}
+/*Box 4 logos nested inside of divs*/
+.box4{
+  position: absolute;
+  bottom: -25em;
+  left: 10em;
+  grid-template-columns: repeat(3, 1fr);
+  gap: px;
+  display:grid;
+  justify-content: center;
+  align-content: space-around;
+  width: 90%;
+  height: 15%;
+}
+.box4 img{
+  position: absolute;
+  width: 400px;
+  height: 100px;
+  align-self: center;
+}
+#minecraftlogo{
+  
+  margin-top: -55px;
+}
+
+.grid >.box4 {
+  background-color:rgb(228,255, 244) !important; 
+}
+/*Box 5*/
+.box5{
+  position: absolute;
+  bottom: -85em;
+  left: 2em;
+  border-radius: 2em;
+
+}
+.box5 img {
+  position: relative;
+  border-radius: 2em;
+  padding: 1em;
+  width: 950px;
+  height: 720px;
+  
+}
+.grid >.box5 {
+  background-color:gray !important; 
+}
+/* box 6 letter on top of second picture box 5*/
+.box6 h1{
+  color: rgb(75 75 75);
+  font-size: 40px;
+
+}
+.box6{
+  position: absolute;
+  bottom: -35em;
+  left: 3em;
+}
+/* box 7 pcture of inside*/
+.box7{
+  position: absolute;
+  bottom: -35em;
+  width: 10%;
+  height: 2%;
+  left: 62em;
+}
+.box7 img{
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  border-radius: 1em;
+  
+}
+/*box 8 picture kitchenr*/
+.box8{
+  position: absolute;
+  bottom: -52em;
+  width: 10%;
+  height: 2%;
+  left: 62em;
+}
+.box8 img{
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  border-radius: 1em;
+}
+/* Box 9 front area*/
+.box9{
+  position: absolute;
+  bottom: -69.2em;
+  width: 10%;
+  height: 2%;
+  left: 62em;
+}
+.box9 img{
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  border-radius: 1em;
+}
+/* Box 10 indoor dining are woords*/
+.box10{
+  position: absolute;
+  bottom: -42em;
+  left: 85em;
+  width: 400px;
+  height: 130px;
+}
+.box10 h2 {
+  color: rgb(75 75 75);
+  font-size: 34px;
+
+}
+.box10 h3{
+  color: rgb(75 75 75);
+  font-size: 23px;
+ 
+}
+/* Box 11 kitchen */ 
+.box11 {
+  position: absolute;
+  bottom: -59em;
+  left: 85em;
+  width: 400px;
+  height: 130px;
+}
+
+.box11 h2 {
+  color: rgb(75 75 75);
+  font-size: 34px;
+
+}
+.box11 h3{
+  color: rgb(75 75 75);
+  font-size: 23px;
+}
+/* Box 12 patio words*/
+.box12 {
+  position: absolute;
+  bottom: -77em;
+  left: 85em;
+  width: 400px;
+  height: 130px;
+}
+
+.box12 h2 {
+  color: rgb(75 75 75);
+  font-size: 34px;
+
+}
+.box12 h3{
+  color: rgb(75 75 75);
+  font-size: 23px;
+}

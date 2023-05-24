@@ -1,0 +1,464 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /*body color*/
+  body{
+    background-color: rgb(234, 255, 242);
+  }
+  
+  /* spaces out the li(links home, menu,etc)*/
+  .gridnavbar {
+      flex-grow: 1;
+      justify-items: flex-start; 
+  }
+  
+  
+  .nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  
+  
+  }
+  
+  /*centers the li txt horizantoly*/
+  .navlinks ul{
+     
+     display: flex;
+     justify-content: space-between; /* center horizontally */
+     align-items: center;
+     list-style: none;
+     margin: 0;
+     padding: 0;
+     height: 60px;
+     width: 800px;
+  
+  }
+  /* moves the li  up*/
+  .navlinks li {
+      margin-right: 1rem;
+     list-style: none;
+  }
+  /*align the h4 and li in the same horizantal line*/
+  .navlinks {
+      display: flex;
+      align-items: center;
+    }
+    /*moves the h4 and li up*/
+    .navlinks h4 {
+      margin: 0;
+      padding-right: 300px;
+      padding-left: 100px;
+      font-size: 44px;
+      font-family: 'Roboto';
+     
+    }
+    .highlight {
+      color: rgba(255, 173, 76, 1);
+      
+    }
+  
+    .navlinks a {
+      font-family: 'Roboto', sans-serif;
+      color: rgba(75, 75, 75, 1);
+      text-decoration: none;
+      font-size: 20px;
+    }
+    .navlinks .home-link a {
+      color: rgba(253, 241, 226,);
+
+    }
+    /* menu grid*/
+    
+    .TopMenu div{
+      /* border: solid 1px red; */
+      margin: 0 auto;
+      border-radius: 0.5em;
+      background-color: rgb(253, 241, 226);
+      width: 17%;
+  }
+
+  .TopMenu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 10%;
+   
+  }
+  .TopMenu img{
+    width: 300px;
+    height: 300px;
+    padding: 2em;
+  }
+  .TopMenu h3{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+ .sigdish{
+  top: 130px;
+  left: 100px;
+  position: relative;
+  font-size: 24px;
+  color:rgba(255, 173, 76, 1); 
+ }
+ .menutitle{
+  left: 100px;
+  padding: 5%;
+  font-size: 50px;
+ }
+.menutitle h1{
+  color: rgba(255, 173, 76, 1); 
+}
+.misosoup {
+  position: absolute;
+  bottom: -0em;
+  width: 10%;
+  height: 2%;
+  left:4em;
+}
+.misosoup img{
+  position: absolute;
+  width: 350px;
+  height: 350px;
+ 
+  
+}
+.misoword{
+  position: absolute;
+  bottom: -10em;
+  left: 25em;
+  width: 400px;
+  height: 130px;
+}
+.misoword h2 {
+  color: rgb(75 75 75);
+  font-size: 34px;
+
+}
+.misoword h3{
+  color: rgb(75 75 75);
+  font-size: 17px;
+}
+.ramen {
+  position: absolute;
+  bottom: -20em;
+  width: 10%;
+  height: 2%;
+  left:5em;
+}
+.ramen img{
+  position: absolute;
+  width: 300px;
+  height: 300px;
+}
+.ramenword{
+  position: absolute;
+  bottom: -27em;
+  left: 25em;
+  width: 400px;
+  height: 130px;
+}
+.ramenword h2 {
+  color: rgb(75 75 75);
+  font-size: 34px;
+
+}
+.ramenword h3{
+  color: rgb(75 75 75);
+  font-size: 17px;
+}
+.spicyramen {
+  position: absolute;
+  bottom: -40em;
+  width: 10%;
+  height: 2%;
+  left:4em;
+}
+.spicyramen img{
+  position: absolute;
+  width: 310px;
+  height: 310px;
+}
+.spicyramenword{
+  position: absolute;
+  bottom: -48em;
+  left: 25em;
+  width: 400px;
+  height: 130px;
+}
+.spicyramenword h2 {
+  color: rgb(75 75 75);
+font-size: 34px;
+}
+.spicyramenword h3{
+  color: rgb(75 75 75);
+  font-size: 17px;
+}
+.bentobox{
+  position: absolute;
+  bottom: -60em;
+  width: 10%;
+  height: 2%;
+  left:2em;
+}          
+.bentobox img{
+  position: absolute;
+  width: 400px;
+  height: 400px;
+}
+.bentoboxword{
+  position: absolute;
+  bottom: -70em;
+  left: 25em;
+  width: 400px;
+  height: 130px;
+}
+.bentoboxword h2{
+  color: rgb(75 75 75);
+  font-size: 34px;
+}
+.bentoboxword h3{
+  color: rgb(75 75 75);
+  font-size: 17px;
+}
+.shashimi{
+  position: absolute;
+  bottom: 1em;
+  width: 10%;
+  height: 2%;
+  left:67em;
+}
+.shashimi img{
+  position: absolute;
+  width: 270px;
+  height: 270px;
+}
+.shashimiword{
+  position: absolute;
+  bottom: -10em;
+  left: 86em;
+  width: 400px;
+  height: 130px;
+}
+.shashimiword h2{
+  color: rgb(75 75 75);
+  font-size: 34px;
+}
+.shashimiword h3{
+  color: rgb(75 75 75);
+  font-size: 17px;
+}
+.sushispecial{
+  position: absolute;
+  bottom: -22em;
+  width: 10%;
+  height: 2%;
+  left:69em;
+}
+.sushispecial img{
+  position: absolute;
+  width: 230px;
+  height: 230px;
+}
+.sushispecialword{
+  position: absolute;
+  bottom: -30em;
+  left: 86em;
+  width: 400px;
+  height: 130px;
+}
+.sushispecialword h2 {
+  color: rgb(75 75 75);
+  font-size: 34px;
+}
+.sushispecialword h3{
+  color: rgb(75 75 75);
+  font-size: 17px;
+}
+.dragonroll{
+  position: absolute;
+  bottom: -37em;
+  width: 10%;
+  height: 2%;
+  left:66em;
+}
+.dragonroll img{
+  position: absolute;
+  width: 370px;
+  height: 370px;
+}
+.dragonrollword{
+  position: absolute;
+  bottom: -48em;
+  left: 86em;
+  width: 400px;
+  height: 130px;
+}
+.dragonrollword h2{
+  color: rgb(75 75 75);
+  font-size: 34px;
+}
+.dragonrollword h3{
+  color: rgb(75 75 75);
+  font-size: 17px;
+}
+.homebentobox{
+  position: absolute;
+  bottom: -63em;
+  width: 10%;
+  height: 2%;
+  left: 70em;
+}
+.homebentobox img{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+}
+.homebentoboxword{
+  position: absolute;
+  bottom: -70em;
+  left: 86em;
+  width: 400px;
+  height: 130px;
+}
+.homebentoboxword h2{
+  color: rgb(75 75 75);
+  font-size: 34px;
+}
+.homebentoboxword h3{
+  color: rgb(75 75 75);
+  font-size: 17px;
+}
+.dessert{
+  
+  padding: 5%;
+  font-size: 50px;
+  bottom: -33em;
+  position: absolute;
+
+ }
+.dessert h1{
+  color: rgba(255, 173, 76, 1); 
+}
+.cake{
+  position: absolute;
+  bottom: -98em;
+  width: 10%;
+  height: 2%;
+  left: 5em;
+}
+.cake img{
+  position: absolute;
+  width: 300px;
+  height: 300px;
+}
+.cakeword{
+  position: absolute;
+  bottom: -110em;
+  left: 25em;
+  width: 400px;
+  height: 130px;
+}
+.cakeword h2{
+  color: rgb(75 75 75);
+  font-size: 34px;
+}
+.cakeword h3{
+  color: rgb(75 75 75);
+  font-size: 17px;
+}
+.icecream{
+  position: absolute;
+  bottom: -96em;
+  width: 10%;
+  height: 2%;
+  left: 69em;
+}
+.icecream img{
+  position: absolute;
+  width: 300px;
+  height: 300px;
+}
+.icecreamword{
+  position: absolute;
+  bottom: -109em;
+  left: 86em;
+  width: 404px;
+  height: 130px;
+}
+.icecreamword h2{
+  color: rgb(75 75 75);
+  font-size: 34px;
+}
+.icecreamword h3{
+  color: rgb(75 75 75);
+  font-size: 17px;
+}
+.beverages{
+  padding: 5%;
+  font-size: 50px;
+  bottom: -42em;
+  position: absolute;
+}
+.beverages h1{
+  color: rgba(255, 173, 76, 1); 
+}
+.tea{
+  position: absolute;
+  bottom: -125em;
+  width: 10%;
+  height: 2%;
+  left: 2em;
+}
+.tea img{
+  position: absolute;
+  width: 350px;
+  height: 350px;
+}
+.teaword{
+  position: absolute;
+  bottom: -140em;
+  left: 25em;
+  width: 400px;
+  height: 130px;
+}
+.teaword h2{
+  color: rgb(75 75 75);
+  font-size: 34px;
+}
+.teaword h3{
+  color: rgb(75 75 75);
+  font-size: 17px;
+}
+.boba{
+  position: absolute;
+  bottom: -130em;
+  width: 10%;
+  height: 2%;
+  left: 69em;
+}
+.boba img{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+}
+.bobaword{
+  position: absolute;
+  bottom: -140em;
+  left: 86em;
+  width: 404px;
+  height: 130px;
+}
+.bobaword h2{
+  color: rgb(75 75 75);
+  font-size: 34px;
+}
+.bobaword h3{
+  color: rgb(75 75 75);
+  font-size: 17px;
+}

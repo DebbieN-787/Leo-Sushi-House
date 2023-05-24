@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /*body color*/
+  body{
+    background-color: rgb(234, 255, 242);
+  }
+  
+  /* spaces out the li(links home, menu,etc)*/
+  .gridnavbar {
+      flex-grow: 1;
+      justify-items: flex-start; 
+  }
+  
+  
+  .nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  
+  
+  }
+  
+  /*centers the li txt horizantoly*/
+  .navlinks ul{
+     
+     display: flex;
+     justify-content: space-between; /* center horizontally */
+     align-items: center;
+     list-style: none;
+     margin: 0;
+     padding: 0;
+     height: 60px;
+     width: 800px;
+  
+  }
+  /* moves the li  up*/
+  .navlinks li {
+      margin-right: 1rem;
+     list-style: none;
+  }
+  /*align the h4 and li in the same horizantal line*/
+  .navlinks {
+      display: flex;
+      align-items: center;
+    }
+    /*moves the h4 and li up*/
+    .navlinks h4 {
+      margin: 0;
+      padding-right: 300px;
+      padding-left: 100px;
+      font-size: 44px;
+      font-family: 'Roboto';
+     
+    }
+    .highlight {
+      color: rgba(255, 173, 76, 1);
+      
+    }
+  
+    .navlinks a {
+      font-family: 'Roboto', sans-serif;
+      color: rgba(75, 75, 75, 1);
+      text-decoration: none;
+      font-size: 20px;
+    }
+    .navlinks .home-link a {
+      color: rgba(253, 241, 226,);
+
+    }
+
+
+body{  
+    font-family: Calibri, Helvetica, sans-serif;  
+    background-color: rgb(164, 228, 144);  
+  }  
+  .container {  
+      padding: 50px;  
+    background-color:  rgb(147, 225, 215);  
+  }  
+    
+  input[type=text], input[type=password], textarea {  
+    width: 55%;  
+    padding: 10px;  
+    margin: 5px 0 22px 0;  
+    display: inline-block;  
+    border: none;  
+    background: #f1f1f1;  
+  }  
+  input[type=text]:focus, input[type=password]:focus {  
+    background-color: orange;  
+    outline: none;  
+  }  
+   div {  
+              padding: 10px 0;
+  }  
+  hr {  
+    border: 1px solid #f1f1f1;  
+    margin-bottom: 25px;  
+  }  
+  .registerbtn {  
+    background-color: #4CAF50;  
+    color: white;  
+    padding: 16px 20px;  
+    margin: 8px 0;  
+    border: none;  
+    cursor: pointer;  
+    width: 100%;  
+    opacity: 0.9;  
+  }  
+  .registerbtn:hover {  
+    opacity: 1;  
+  }  
+  .container h1{
+   
+  color:rgba(255, 173, 76, 1);
+  font-size: 40px;
+}
+  .container h2{
+    color:rgb(106, 162, 79);
+    font-size: 40px;
+  }
+.container h6{
+    font-size: 25px;
+}
+.sleepingfox {
+    position: absolute;
+    bottom: 22em;
+    width: 10%;
+    height: 2%;
+    left:80em;
+}
+.sleepingfox img{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+}
